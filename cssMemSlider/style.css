@@ -3,8 +3,119 @@
   height: 600px;
   overflow: hidden;
   border: 10px solid #fff;
+  background-color: #494949;
 }
 
 .middle {
-  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.label-r1,
+.label-r2,
+.label-r3,
+.label-r4 {
+  position: absolute;
+  bottom: 4.5%;
+  right: 9%;
+  display: flex;
+}
+
+.label-r1 {
+  right: 15%;
+}
+
+.label-r2 {
+  right: 11%;
+}
+
+.label-r3 {
+  right: 7%;
+}
+
+.label-r4 {
+  right: 3%;
+}
+
+
+.bar {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: 0.8;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+  background-color: white;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+  border-radius: 3%;
+}
+
+.slide img {
+  display: block;
+  margin: 2.5% auto;
+  width: 95%;
+  height: 80%;
+  border-radius: 3%;
+}
+
+#r1:checked ~ .label-r1 {
+  background-color: #e58484;
+}
+
+#r2:checked ~ .label-r2 {
+  background-color: #e58484;
+}
+
+#r3:checked ~ .label-r3 {
+  background-color: #e58484;
+}
+
+#r4:checked ~ .label-r4 {
+  background-color: #e58484;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -75%;
 }
